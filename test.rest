@@ -1,0 +1,60 @@
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{"username":"alamore1","password":"123"}
+
+###
+POST http://127.0.0.1:8000/logout
+Content-Type: application/json
+Authorization: Token f68f1adbf7e19349ed223f153dd09306c6d63751
+
+###
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+
+{"username":"alamore1","password":"123","email":"zack1@gmail.com"}
+
+
+###
+
+GET http://127.0.0.1:8000/api/employees/
+Content-Type: application/json
+Authorization: Token 9ba6f2e3077c73639c3d50e918b70b6c1f41969a
+
+###
+POST http://127.0.0.1:8000/api/employees/create/
+Content-Type: application/json
+Authorization: Token 9ba6f2e3077c73639c3d50e918b70b6c1f41969a
+
+{"name":"jacksonWarrior","position":"de123v","department":"devops123"}
+
+
+
+###
+PUT http://127.0.0.1:8000/api/employees/3/update/
+Content-Type: application/json
+Authorization: Token adef8eec2af4a2d4029b5bbe46934f93830f8009
+
+
+{"name":"Gabriel Jonas"}
+
+
+###
+DELETE  http://127.0.0.1:8000/api/employees/2/delete/
+Content-Type: application/json
+Authorization: Token f68f1adbf7e19349ed223f153dd09306c6d63751
+
+
+{}
+
+
+###
+GET  http://127.0.0.1:8000/api/employees/1/
+Content-Type: application/json
+Authorization: Token f68f1adbf7e19349ed223f153dd09306c6d63751
+
+
+{}
+
